@@ -1,0 +1,189 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+
+    <!-- jquery  -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(function () {
+        $("#header").load("./header.html");
+        $("#footer").load("./footer.html");
+      });
+    </script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Murecho&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawsome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header"></header>
+
+    <!-- Section 1 -->
+    <section class="section1">
+      <h1>Contact Us</h1>
+      <hr />
+      <p>-Open on Mon-Fri from 9am-10pm.</p>
+      <p>
+        Leave your thoughts below and someone from our team will contact you.
+      </p>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="section2">
+      <div class="inqury">
+        <div class="form">
+          <form action="">
+            <div class="form-section">
+              <label for="name" class="form-label">Name *</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                class="form-input"
+                placeholder="John Smith"
+              />
+            </div>
+            <div class="form-section">
+              <label for="email" class="form-label">E-mail *</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                class="form-input"
+                placeholder="john.smith@gmail.com"
+              />
+            </div>
+            <div class="form-section">
+              <label for="phone" class="form-label">Phone Number *</label>
+              <input
+                type="number"
+                id="phone"
+                name="phone"
+                class="form-input"
+                placeholder="9090909090"
+              />
+            </div>
+            <div class="address">
+              <div class="form-section">
+                <label for="city" class="form-label">City</label>
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  class="form-input"
+                  placeholder="Mumbai"
+                />
+              </div>
+              <div class="form-section">
+                <label for="state" class="form-label">State</label>
+                <input
+                  type="text"
+                  id="state"
+                  name="state"
+                  class="form-input"
+                  placeholder="Maharashtra"
+                />
+              </div>
+            </div>
+            <div class="form-section">
+              <label for="thought" class="form-label"
+                >Share your thoughts</label
+              >
+              <textarea
+                class="form-textarea"
+                id="thought"
+                rows="4"
+                placeholder="Write here ..."
+              ></textarea>
+            </div>
+            <div class="form-section">
+              <button type="submit" class="form-btn">Submit</button>
+            </div>
+          </form>
+        </div>
+        <div id="map" class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3791.431382907979!2d78.38529076480505!3d17.445361955722497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb915c490d0173%3A0x9b63c1230fd2ac70!2sLassi%20Shop!5e1!3m2!1sen!2sin!4v1665846568554!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="outer">
+          <div class="card">
+            <img src="./assets/img/section2-location.png" />
+            <p>Location</p>
+            <p>171-181 South VW Street Wigardha, NY +07 34452</p>
+          </div>
+          <div class="card">
+            <img src="./assets/img/section2-phone.png" />
+            <p>Contact Us</p>
+            <p>Phone : +00 1453 2222</p>
+            <p>Whatsapp : +00 1453 2222</p>
+          </div>
+        </div>
+        <div class="outer">
+          <div class="card">
+            <img src="./assets/img/section2-email.png" />
+            <p>E-Mail</p>
+            <p>Jarsy@sample.com</p>
+            <p>promo.@jarsy.com</p>
+          </div>
+          <div class="card">
+            <img src="./assets/img/section2-payment.png" />
+            <p>Payment</p>
+            <p>Payment Only On Behalf of Name : 'JarsyJuice'</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <script type="module" src="./assets/js/contact.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script> -->
+  </body>
+</html>
