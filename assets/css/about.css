@@ -123,10 +123,17 @@
     color: #4e4e4e;
     font-weight: 400;
     font-size: 13px;
+  }
 }
 
 @media (max-width: 580px) {
   .section1 {
-    padding: 240px 20px 0px 20px;
+    padding: 140px 20px 0px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .interior {
+    margin: 80px 15px;
   }
 }
