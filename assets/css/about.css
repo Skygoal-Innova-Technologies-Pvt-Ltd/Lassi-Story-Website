@@ -175,6 +175,10 @@
   .franchise-card {
     width: 80%;
   }
+
+  .fran-list > p {
+    margin-bottom: 5px;
+  }
 }
 
 @media (max-width: 500px) {
