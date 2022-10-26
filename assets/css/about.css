@@ -93,6 +93,41 @@
   margin-right: 10px;
 }
 
+.franchise-card {
+  width: 60%;
+  background-color: #fc5c5c;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.franchise-card > p {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.btn-grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.grid-btn {
+  cursor: pointer;
+  width: 160px;
+  padding: 10px 5px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 870px) {
   .interior {
     display: flex;
@@ -102,6 +137,12 @@
 
   column-grid {
     margin-left: 40px;
+  }
+}
+
+@media (max-width: 720px) {
+  .franchise-card {
+    width: 80%;
   }
 }
 
@@ -130,10 +171,27 @@
   .section1 {
     padding: 140px 20px 0px 20px;
   }
+
+  .franchise-card {
+    width: 80%;
+  }
 }
 
 @media (max-width: 500px) {
   .interior {
     margin: 80px 15px;
+  }
+
+  .franchise-card {
+    width: 90%;
+  }
+
+  .franchise-card > p {
+    font-size: 16px;
+  }
+
+  .grid-btn {
+    width: 120;
+    font-size: 10px;
   }
 }
