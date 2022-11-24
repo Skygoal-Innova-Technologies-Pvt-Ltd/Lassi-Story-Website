@@ -1,0 +1,168 @@
+/** @format */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Murecho", sans-serif;
+}
+
+.section1 {
+  position: relative;
+  height: 60vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #fc5c5c;
+}
+
+.design1 {
+  position: absolute;
+  width: 12%;
+
+  left: 0px;
+  bottom: 0px;
+}
+
+.design2 {
+  position: absolute;
+  width: 12%;
+
+  right: 0px;
+  bottom: 0px;
+}
+
+.design3 {
+  position: absolute;
+  width: 10%;
+
+  left: 0.1px;
+  bottom: 0px;
+  border-bottom-left-radius: 20px;
+}
+
+.design4 {
+  position: absolute;
+  width: 10%;
+
+  right: 0.1px;
+  top: 0px;
+  border-top-right-radius: 18px;
+}
+
+.form-section {
+  position: relative;
+  top: 100px;
+
+  border: 3px solid #fc7c7c;
+  box-shadow: 4px 4px 44px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  width: 70vw;
+  min-height: 420px;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 25px 85px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.title {
+  color: #505050;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #505050;
+}
+
+.field-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.field-check {
+  color: #fc5c5c;
+  border: #fc5c5c 2px solid;
+  border-radius: 8px;
+  min-height: 70px;
+  min-width: 130px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+
+  position: relative;
+}
+
+.field-check:hover {
+  cursor: pointer;
+  background-color: #fc7c7c;
+  color: white;
+}
+
+.field-check > label {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 5px;
+}
+
+label > img {
+  width: 40px;
+  /* padding: ; */
+}
+
+.field-check > input {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+
+  /* width: 100%; */
+  /* height: 100%; */
+  /* opacity: 0; */
+}
+
+.field-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field-text > label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #505050;
+}
+
+.field-text > input {
+  outline: none;
+
+  opacity: 0.8;
+  border: 0.936306px solid rgba(0, 0, 0, 0.4);
+  border-radius: 6.68153px;
+  font-size: 15px;
+  font-weight: 400;
+  width: 400px;
+  padding: 6px 10px;
+}

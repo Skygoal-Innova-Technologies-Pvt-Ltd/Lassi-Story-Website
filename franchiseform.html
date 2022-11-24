@@ -1,0 +1,275 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lassi Story | Franchise Form</title>
+
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(function () {
+        $("#header").load("./header.html");
+      });
+    </script>
+
+    <!-- Fontawsome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Style Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/home.css" /> -->
+
+    <link rel="stylesheet" href="./assets/css/franchise.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Murecho:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header"></header>
+    <section class="section1">
+      <img class="design1" src="./assets/img/pattern (1).png" alt="" />
+      <img class="design2" src="./assets/img/pattern (2).png" alt="" />
+      <div class="form-section">
+        <img class="design3" src="./assets/img/pattern (3).png" alt="" />
+        <img class="design4" src="./assets/img/pattern (4).png" alt="" />
+        <form action="">
+          <div class="progressbar">
+            <img src="" alt="" />
+          </div>
+          <div class="page">
+            <div class="title">Business Information :</div>
+            <div class="subtitle">Investment Capacity</div>
+            <div class="field-group">
+              <div class="field-check">
+                <label for="investment1"> Upto 10 lacs </label>
+                <input
+                  class=""
+                  type="radio"
+                  name="investment"
+                  id="investment1"
+                  value="Upto 10 lacs"
+                />
+              </div>
+              <div class="field-check">
+                <label for="investment2"> Upto 15 lacs </label>
+                <input
+                  class=""
+                  type="radio"
+                  name="investment"
+                  id="investment2"
+                  value="Upto 15 lacs"
+                />
+              </div>
+              <div class="field-check">
+                <label for="investment3"> Upto 20 lacs </label>
+                <input
+                  class=""
+                  type="radio"
+                  name="investment"
+                  id="investment3"
+                  value="Upto 20 lacs"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="page">
+            <div class="title">Business Information :</div>
+            <div class="subtitle">Type of Premises</div>
+            <div class="field-group">
+              <div class="field-check">
+                <label for="premises1">
+                  <img src="./assets/img/own.png" alt="own" />Own</label
+                >
+                <input
+                  class=""
+                  type="radio"
+                  name="premises"
+                  id="premises1"
+                  value="Own"
+                />
+              </div>
+              <div class="field-check">
+                <label for="premises2"
+                  ><img src="./assets/img/rent (1).png" alt="rent" />
+                  Rent</label
+                >
+                <input
+                  class=""
+                  type="radio"
+                  name="premises"
+                  id="premises2"
+                  value="Rent"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="page">
+            <div class="title">Business Information :</div>
+            <div class="subtitle">
+              Address where you want to start this business
+            </div>
+            <div class="field-group">
+              <div class="field-text">
+                <label for="address">Address</label>
+                <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  placeholder="address"
+                />
+              </div>
+
+              <div class="field-text">
+                <label for="state">State</label>
+                <input
+                  type="text"
+                  name="state"
+                  id="state"
+                  placeholder="Rajasthas"
+                />
+              </div>
+
+              <div class="field-text">
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" placeholder="Alwar" />
+              </div>
+
+              <div class="field-text">
+                <label for="pincode">Pincode</label>
+                <input
+                  type="text"
+                  name="pincode"
+                  id="pincode"
+                  placeholder="301001"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="page">
+            <div class="title">Business Information :</div>
+            <div class="subtitle">Experience in Business</div>
+            <div class="field-group">
+              <div class="field-check">
+                <label for="experience1"> &#60;2 Years</label>
+                <input
+                  class=""
+                  type="radio"
+                  name="experience"
+                  id="experience1"
+                  value="less than 2 years"
+                />
+              </div>
+
+              <div class="field-check">
+                <label for="experience2"> 2+ Years</label>
+                <input
+                  class=""
+                  type="radio"
+                  name="experience"
+                  id="experience2"
+                  value="2 Plue years"
+                />
+              </div>
+
+              <div class="field-check">
+                <label for="experience3">5+ Years</label>
+                <input
+                  class=""
+                  type="radio"
+                  name="experience"
+                  id="experience3"
+                  value="5 Plus years"
+                />
+              </div>
+
+              <div class="field-check">
+                <label for="experience4">No Experience</label>
+                <input
+                  class=""
+                  type="radio"
+                  name="experience"
+                  id="experience4"
+                  value="No experience"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="page">
+            <div class="title">Business Information :</div>
+            <div class="subtitle">Qualifications</div>
+            <div class="field-group">
+              <div class="field-check">
+                <label for="qualifications1">Graduate</label>
+                <input
+                  class=""
+                  type="radio"
+                  name="qualifications"
+                  id="qualifications1"
+                  value="Graduate"
+                />
+              </div>
+
+              <div class="field-check">
+                <label for="qualifications2">Post Graduate</label>
+                <input
+                  class=""
+                  type="radio"
+                  name="qualifications"
+                  id="qualifications2"
+                  value="Post Graduate"
+                />
+              </div>
+
+              <div class="field-check">
+                <label for="qualifications3">Intermediate</label>
+                <input
+                  class=""
+                  type="radio"
+                  name="qualifications"
+                  id="qualifications3"
+                  value="Intermediate"
+                />
+              </div>
+
+              <div class="field-check">
+                <label for="qualifications4">Others</label>
+                <input
+                  class=""
+                  type="radio"
+                  name="qualifications"
+                  id="qualifications4"
+                  value="Others"
+                />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
