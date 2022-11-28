@@ -8,6 +8,7 @@
 }
 
 .section1 {
+  padding: 30px;
   position: relative;
   height: 60vh;
 
@@ -52,9 +53,15 @@
   border-top-right-radius: 18px;
 }
 
+.section2 {
+  margin-top: -280px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
 .form-section {
   position: relative;
-  top: 100px;
 
   border: 3px solid #fc7c7c;
   box-shadow: 4px 4px 44px rgba(0, 0, 0, 0.05);
@@ -68,6 +75,8 @@
   gap: 10px;
 
   padding: 25px 85px;
+
+  /* margin-bottom: 200px; */
 }
 
 .page {
@@ -93,6 +102,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+input[type="radio"] {
+  accent-color: #fc5c5c;
 }
 
 .field-check {
@@ -125,7 +138,7 @@
   gap: 5px;
   justify-content: center;
   align-items: center;
-  padding: 20px 5px;
+  padding: 20px 20px;
 }
 
 label > img {
@@ -147,6 +160,7 @@ label > img {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  width: 340px;
 }
 
 .field-text > label {
@@ -163,6 +177,83 @@ label > img {
   border-radius: 6.68153px;
   font-size: 15px;
   font-weight: 400;
-  width: 400px;
+  width: 100%;
   padding: 6px 10px;
+}
+
+.form-outer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.form-outer > form {
+  display: flex;
+  width: 1200%;
+  /* margin-left: -8.33%; */
+}
+
+.page {
+  width: 8.33%;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.bottom-btn {
+  /* position: absolute; */
+  margin-top: 20px;
+  bottom: 20px;
+  right: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: aliceblue;
+  background-color: #fc5c5c;
+  border-radius: 10px;
+  border: none;
+  padding: 5px 20px;
+  height: 40px;
+  min-width: 150px;
+}
+
+.bottom-btn:hover {
+  cursor: pointer;
+  background-color: #fc7c7c;
+}
+
+.progressbar {
+  /* height: 100px; */
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.progressbar > img {
+  width: 35px;
+  cursor: pointer;
+}
+
+.bar-count {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.progressbar > div {
+  width: 90%;
+}
+
+.bar {
+  width: 100%;
+  height: 8px;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #fc5c5c 10%, gray 90%);
+}
+
+@media (max-width: 740px) {
+  .form-section {
+    padding: 25px 35px;
+    width: 90vw;
+  }
+
+  .field-text {
+    width: 100%;
+  }
 }
