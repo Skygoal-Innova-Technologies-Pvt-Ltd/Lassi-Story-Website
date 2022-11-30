@@ -1,6 +1,7 @@
 /** @format */
 
 nav {
+  /* z-index: 2; */
   background: #fc5c5c;
   display: flex;
   justify-content: center;
