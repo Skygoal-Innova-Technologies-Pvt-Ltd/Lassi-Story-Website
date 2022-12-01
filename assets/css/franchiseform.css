@@ -322,4 +322,8 @@ label > img {
   .afterSubmit > img {
     width: 100px;
   }
+
+  .afterSubmit > input {
+    width: 100%;
+  }
 }

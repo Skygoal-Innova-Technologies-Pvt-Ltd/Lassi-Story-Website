@@ -68,7 +68,7 @@
           </div>
         </div>
         <div class="form-outer">
-          <form id="franchise-form" action="">
+          <form name="franchise-form" id="franchise-form" action="">
             <div class="page slidepage">
               <div class="title">Business Information :</div>
               <div class="subtitle">Investment Capacity</div>
@@ -537,22 +537,22 @@
                 </div>
 
                 <div class="field-text">
-                  <label for="mobile-number">Mobile Number</label>
+                  <label for="mobile_number">Mobile Number</label>
                   <input
                     type="number"
-                    name="mobile-number"
-                    id="mobile-number"
+                    name="mobile_number"
+                    id="mobile_number"
                     placeholder=""
                     onchange="secondNextHandler()"
                   />
                 </div>
 
                 <div class="field-text">
-                  <label for="alt-mobile-number">Alternate Mobile Number</label>
+                  <label for="alt_mobile_number">Alternate Mobile Number</label>
                   <input
                     type="number"
-                    name="alt-mobile-number"
-                    id="alt-mobile-number"
+                    name="alt_mobile_number"
+                    id="alt_mobile_number"
                     placeholder=""
                     onchange="secondNextHandler()"
                   />
@@ -616,72 +616,72 @@
               <div class="subtitle">How you heard about us?</div>
               <div class="field-group">
                 <div class="field-check">
-                  <label for="Heard-From1">Advertisement</label>
+                  <label for="Heard_From1">Advertisement</label>
                   <input
                     class=""
                     type="radio"
-                    name="Heard-From"
-                    id="Heard-From1"
+                    name="Heard_From"
+                    id="Heard_From1"
                     value="Advertisement"
                     onclick="slidepage(11)"
                   />
                 </div>
 
                 <div class="field-check">
-                  <label for="Heard-From2">Google Search</label>
+                  <label for="Heard_From2">Google Search</label>
                   <input
                     class=""
                     type="radio"
-                    name="Heard-From"
-                    id="Heard-From2"
+                    name="Heard_From"
+                    id="Heard_From2"
                     value="Google Search"
                     onclick="slidepage(11)"
                   />
                 </div>
 
                 <div class="field-check">
-                  <label for="Heard-From3">Youtube</label>
+                  <label for="Heard_From3">Youtube</label>
                   <input
                     class=""
                     type="radio"
-                    name="Heard-From"
-                    id="Heard-From3"
+                    name="Heard_From"
+                    id="Heard_From3"
                     value="Youtube"
                     onclick="slidepage(11)"
                   />
                 </div>
 
                 <div class="field-check">
-                  <label for="Heard-From4">Word of mouth</label>
+                  <label for="Heard_From4">Word of mouth</label>
                   <input
                     class=""
                     type="radio"
-                    name="Heard-From"
-                    id="Heard-From4"
+                    name="Heard_From"
+                    id="Heard_From4"
                     value="Word of mouth"
                     onclick="slidepage(11)"
                   />
                 </div>
 
                 <div class="field-check">
-                  <label for="Heard-From5">Referral</label>
+                  <label for="Heard_From5">Referral</label>
                   <input
                     class=""
                     type="radio"
-                    name="Heard-From"
-                    id="Heard-From5"
+                    name="Heard_From"
+                    id="Heard_From5"
                     value="Referral"
                     onclick="slidepage(11)"
                   />
                 </div>
 
                 <div class="field-check">
-                  <label for="Heard-From6">Others</label>
+                  <label for="Heard_From6">Others</label>
                   <input
                     class=""
                     type="radio"
-                    name="Heard-From"
-                    id="Heard-From6"
+                    name="Heard_From"
+                    id="Heard_From6"
                     value="Others"
                     onclick="slidepage(11)"
                   />
@@ -706,7 +706,9 @@
                 </div>
               </div>
 
-              <button type="submit" class="bottom-btn">Submit</button>
+              <button type="submit" id="submit-btn" class="bottom-btn">
+                Submit
+              </button>
             </div>
 
             <div class="page afterSubmit">
