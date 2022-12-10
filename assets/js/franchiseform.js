@@ -86,7 +86,7 @@ function secondNextHandler() {
 // SUBMIT HANDLER ...
 
 const scriptURL =
-  "https://academy-apiv3.herokuapp.com/api/V1/adddata/1hy5hwGEJ8gBvFYg-J2tfFIhux2B6ReFddgB-Ce1riKg";
+  "https://skygoalsheetapi.skygoaltech.com/api/V1/adddata/1hy5hwGEJ8gBvFYg-J2tfFIhux2B6ReFddgB-Ce1riKg";
 
 var forms = document.forms["franchise-form"];
 
@@ -129,9 +129,6 @@ forms.addEventListener("submit", async (event) => {
     },
 
     body: JSON.stringify({
-      // DEFINE ALL THE FIELDS IN JSON FORMAT HERE
-      // ...formData,
-
       investment: investment.value,
       premises: premises.value,
       address: address.value,

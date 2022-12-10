@@ -93,7 +93,7 @@ nav > ul {
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 830px) {
   .section1 {
     padding-top: 160px;
   }
@@ -203,4 +203,17 @@ nav > ul {
     height: 90vh;
     top: 10vh;
   }
+}
+
+.franchise-header {
+}
+
+.franchise-header > a {
+  background-color: #000000;
+  color: white;
+  height: 60px;
+  width: 120px;
+
+  padding: 10px 35px;
+  border-radius: 30px;
 }

@@ -295,20 +295,46 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
+  width: 100%;
   /* align-items: center; */
-  justify-content: center;
+  justify-content: space-evenly;
 
   margin-bottom: 100px;
 }
 
 .glasses > img {
-  width: 24%;
+  /* width: 20%; */
+  display: inline-block;
+  height: 400px;
+  animation: jump-shaking 2.83s infinite;
 }
-
+@keyframes jump-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateY(-9px);
+  }
+  35% {
+    transform: translateY(-9px) rotate(17deg);
+  }
+  55% {
+    transform: translateY(-9px) rotate(-17deg);
+  }
+  65% {
+    transform: translateY(-9px) rotate(17deg);
+  }
+  75% {
+    transform: translateY(-9px) rotate(-17deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
 .client {
   background-color: #fc5c5c;
   color: white;
-  width: 98.8vw;
+  width: 100vw;
 
   padding: 70px 90px;
   margin-bottom: 90px;
@@ -340,6 +366,32 @@
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+
+  padding: 20px;
+  height: 400px;
+
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  /* display: none; */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(37, 37, 37, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .client-card {

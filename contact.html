@@ -16,6 +16,9 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- RECAPTCHA API -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <script>
       $(function () {
         $("#header").load("./header.html");
@@ -128,6 +131,12 @@
               ></textarea>
             </div>
             <div class="form-section">
+              <div
+                class="g-recaptcha"
+                data-sitekey="6LcA3GsjAAAAAIIxT95MH_czPwZnaghucyQejjYd"
+              ></div>
+            </div>
+            <div class="form-section">
               <button type="submit" class="form-btn">Submit</button>
             </div>
           </form>
@@ -149,27 +158,30 @@
           <div class="card">
             <img src="./assets/img/section2-location.png" />
             <p>Location</p>
-            <p>171-181 South VW Street Wigardha, NY +07 34452</p>
+            <p>
+              Ground Floor, 1-90/8/R/13,Vasanth Kutter Vittalrao Nagar,
+              Madhapur, Hi-tech City Hyderabad, Rangareddi - 500081
+            </p>
           </div>
           <div class="card">
             <img src="./assets/img/section2-phone.png" />
             <p>Contact Us</p>
-            <p>Phone : +00 1453 2222</p>
-            <p>Whatsapp : +00 1453 2222</p>
+            <p>Phone : +91-7799550044</p>
+            <!-- <p>Whatsapp : +00 1453 2222</p> -->
           </div>
         </div>
         <div class="outer">
           <div class="card">
             <img src="./assets/img/section2-email.png" />
             <p>E-Mail</p>
-            <p>Jarsy@sample.com</p>
-            <p>promo.@jarsy.com</p>
+            <p>info@lassistory.in</p>
+            <!-- <p>promo.@jarsy.com</p> -->
           </div>
-          <div class="card">
+          <!-- <div class="card">
             <img src="./assets/img/section2-payment.png" />
             <p>Payment</p>
             <p>Payment Only On Behalf of Name : 'JarsyJuice'</p>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>

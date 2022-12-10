@@ -81,7 +81,7 @@
         <div class="banner-lower">
           <img src="./assets/img/shop.png" alt="shop" />
 
-          <a href="./franchiseform.html">Get Started</a>
+          <a href="./start.html">Get Started</a>
         </div>
       </div>
       <section class="section3">
@@ -127,12 +127,20 @@
         <div class="franchise-card">
           <p>KNOW MORE ABOUT OUR FRANCHISE PROPOSAL</p>
           <div class="btn-grid">
-            <button class="grid-btn">Become a Franchise</button>
+            <button class="grid-btn" onclick="gotofranchise()">
+              Become a Franchise
+            </button>
           </div>
         </div>
       </section>
     </section>
 
     <foorer id="footer"></foorer>
+
+    <script>
+      function gotofranchise() {
+        window.location.href = "./start.html";
+      }
+    </script>
   </body>
 </html>

@@ -64,7 +64,7 @@
       <img src="./assets/img/lassi background.png" class="bg-img" />
       <div class="section2-title">
         <img src="./assets/img/Line.png" alt="" />
-        <p>About Us</p>
+        <p>Our Story</p>
         <img src="./assets/img/Line.png" alt="" />
       </div>
       <p class="section2-para">
@@ -209,16 +209,42 @@
           <img src="./assets/img/tick.png" />All time Plastic Bowls big 3750ML
         </p>
       </div>
-      <button class="read-btn">See all</button>
+      <button
+        class="read-btn"
+        onclick="downloadFranchiseBrochure(`./assets/doc/Lassi Story Broucher.pdf`,`Lassi Story Brochure`)"
+      >
+        Download Brochure
+      </button>
       <div class="franchise-card">
         <p>KNOW MORE ABOUT OUR FRANCHISE PROPOSAL</p>
         <div class="btn-grid">
-          <button class="grid-btn">Franchise Download</button>
-          <button class="grid-btn">Menu Download</button>
+          <button id="home-franchise" class="grid-btn">Become Franchise</button>
+          <button
+            class="grid-btn"
+            onclick="downloadFranchiseBrochure(`./assets/doc/ourmenu.pdf`,`Lassi Story Menu`)"
+          >
+            Download Menu
+          </button>
         </div>
       </div>
     </section>
 
     <footer id="footer"></footer>
+
+    <script>
+      document
+        .getElementById("home-franchise")
+        .addEventListener("click", function dothis() {
+          window.location.href = "./franchise.html";
+        });
+
+      const downloadFranchiseBrochure = (url, name) => {
+        const anchor = document.createElement("a");
+        anchor.href = url;
+        anchor.download = name;
+        document.body.appendChild(anchor);
+        anchor.click();
+      };
+    </script>
   </body>
 </html>
