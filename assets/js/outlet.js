@@ -1,21 +1,37 @@
 /** @format */
 
 const outletData = {
-  Haryana: {
-    Sonīpat: [
+  Telangana: {
+    Hyderabad: [
       {
-        name: "Lassi story Murthal",
-        address: "Sonipat,Murthal",
-        image: "./assets/img/outlet.png",
+        name: "Lassi story Madhapur",
+        address: "Madhapur, Hydrabad",
+        image: "./assets/img/outlet/MadhapurHydrabad.jpg",
       },
-    ],
-  },
-  Maharashtra: {
-    Mumbai: [
       {
-        name: "Bandra Lassi Story",
-        address: "Mumbai, Bandra West",
+        image: "./assets/img/outlet/AmeerpetHydrabad.JPG",
+        name: "Lassi Story Ameerpet",
+        address: "Ameerpet, Hydrabad",
+      },
+      {
+        image: "./assets/img/outlet/PadmaraoNagarHydrabad.JPG",
+        name: "Lassi Story Padmarao Nagar",
+        address: "Padmarao Nagar, Hydrabad",
+      },
+      {
+        image: "./assets/img/outlet.png",
+        name: "Lassi Story Raghavendra",
+        address: "Raghavendra, Hydrabad",
+      },
+      {
         image: "./assets/img/outlet2.png",
+        name: "Lassi Story  A.K Drive IN",
+        address: " A.K Drive IN, Hydrabad",
+      },
+      {
+        image: "./assets/img/gallery.png",
+        name: "Lassi Story KPHB Temple",
+        address: "KPHB Temple, Hydrabad",
       },
     ],
   },
