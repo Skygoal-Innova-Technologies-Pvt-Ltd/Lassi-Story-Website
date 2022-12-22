@@ -304,11 +304,12 @@
 }
 
 .glasses > img {
-  width: 460px;
+  width: 350px;
   display: inline-block;
-  height: 400px;
+  height: 450px;
   animation: jump-shaking 2.83s infinite;
 }
+
 @keyframes jump-shaking {
   0% {
     transform: translateX(0);
@@ -375,8 +376,8 @@
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
-  /* display: none; */
+  /* width: 6px; */
+  display: none;
 }
 
 /* Track */
@@ -537,6 +538,11 @@
 }
 
 @media (max-width: 780px) {
+  .glasses > img {
+    width: 200px;
+    height: 300px;
+  }
+
   .section1 {
     padding: 140px 30px 0px 30px;
   }
@@ -651,4 +657,20 @@
   .client-card-content {
     font-size: 13px;
   }
+}
+
+.feature-img {
+  background-color: white;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-img > img {
+  width: 35px;
 }
