@@ -104,7 +104,11 @@
 }
 
 .copyright {
-  justify-item: center;
+ display: flex;
+ flex-direction:row;
+ justify-content: space-around;
+ 
+ width:100%;
   z-index: 500;
 }
 
@@ -112,6 +116,10 @@
   margin: 0px;
   text-align: center;
   z-index: 500;
+}
+
+.footer-privacy-policy {
+  text-align: left;
 }
 
 @media (max-width: 985px) {
@@ -122,6 +130,7 @@
 
   .footer-font1 {
     font-size: 13px;
+    
   }
 
   .footer-font2 {
